@@ -164,15 +164,7 @@ typo3::project { 'typo3.local':
   site_group => 'www-data',
   require => Class['mysql']
 }
-->
-file { "/var/www/typo3.local/typo3conf/PackageStates.php":
-  replace => "yes",
-  ensure  => "file",
-  content => template('mp-typo3/PackageStates.php.erb'),
-  owner  => "vagrant",
-  group  => "www-data",
-  mode => 660,
-}
+
 # create vhost for TYPO3
 apache::vhost { "typo3.local" :
     docroot => "/var/www/typo3.local",
