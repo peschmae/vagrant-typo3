@@ -16,3 +16,6 @@
 [submodule "vagrant/puppet/modules/mp-typo3"]
 	path = vagrant/puppet/modules/typo3
 	url = https://github.com/peschmae/puppet-typo3
+[submodule "www/sources/typo3_src"]
+	path = www/sources/typo3_src
+	url = https://github.com/typo3/typo3.cms.git
